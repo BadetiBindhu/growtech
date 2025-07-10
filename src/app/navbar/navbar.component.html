@@ -1,16 +1,17 @@
-<div class="navbar navbar-expand-md navbar-dark bg-white p-4 sticky-top">  
-    <a href="" class="navbar-brand fw-5">
-     <img src="https://give.do/static/img/logos/WTG/82d6546a-0100-49a1-b299-acc70c7ed432.png" width="200" height="50">
+<div class="navbar navbar-expand-md navbar-white fixed-top navmain text-white">  
+    <a routerLink="/home" class="navbar-brand">
+     <img src="https://portal.grow.org.in/app/images/logoanimation.gif" width="300" height="130" >
     </a>  
     <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>                                                               
     <div class="collapse navbar-collapse" id="nav">
-     <ul class="navbar-nav ms-auto">
-    <li class="nav-item "><a routerLink="/home" class="nav-link fw-semibold fs-5 text-black">Home</a></li>
-    <li class="nav-item "><a routerLink="/about" class="nav-link fw-semibold fs-5 text-black ms-5">About</a></li>
-    <li class="nav-item "><a routerLink="/courses" class="nav-link fw-semibold fs-5 text-black ms-5">Courses</a></li>
-    <li class="nav-item "><a routerLink="/courses" class="nav-link fw-semibold fs-5 text-black ms-5">Impact Stories</a></li>
-    <li class="nav-item "><a routerLink="/contact" class="nav-link fw-semibold fs-5 text-black ms-5 ml-5">Careers</a></li>
-     <li class="nav-item "><a routerLink="/contact" class="nav-link fw-semibold fs-5 text-black ms-5 ml-5">Contact</a></li>
+     <ul class="navbar-nav ms-auto ">
+    <li class="nav-item "><a routerLink="/nav/home" class="nav-link fw-semibold fs-5 text-black">Home</a></li>
+    <li class="nav-item "><a routerLink="/nav/about" class="nav-link fw-semibold fs-5 text-black ms-5">About</a></li>
+    <li class="nav-item "><a routerLink="/nav/courses" class="nav-link fw-semibold fs-5 text-black ms-5">Courses</a></li>
+    <li class="nav-item "><a routerLink="/nav/gallery" class="nav-link fw-semibold fs-5 text-black ms-5">Gallery</a></li>
+    <li class="nav-item "><a routerLink="/nav/contact" class="nav-link fw-semibold fs-5 text-black ms-5 me-5">Contact</a></li>
      </ul>
     </div>
 </div>
+
+<router-outlet></router-outlet>

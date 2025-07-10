@@ -1,3 +1,10 @@
 .main{
     background-color:rgba(197, 195, 193,0.4);
+    letter-spacing: normal;
+}
+.myrow1{
+  position: absolute;
+    z-index:100;
+    top:600px;    
+    background-color: white;
 }

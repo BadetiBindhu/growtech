@@ -1,33 +1,171 @@
 <div class="container-fluid">
-    <div class="w-md-700 h-auto m-5 shadow-lg p-5 rounded ">
+    <div class="row">
+      <div class="col-12">
+          <img src="https://grow.org.in/app/images/slider/slider1.jpg" class="img-fluid sticky-top h-75 w-100 relative">
+      </div>
+    </div>
+    <div class="w-md-800 h-auto m-5 shadow-lg p-5 rounded shadow-black ">
         <div class="row">
-            <h1 class="mb-4">Mean Full Stack Developer</h1>
+            <h1 class="mb-4">{{title1}}</h1>
             <div class="col-md-5 col-sm-12 ">
                 <img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto/gigs/337557206/original/b6be9e17fba72c15d9d6eb4c5e3c032821826405/be-your-full-stack-developer-using-react-js-node-js.jpg"
-                    class="img-fluid" >
+                    class="img-fluid w-100 h-100" >
 
             </div>
-            <div class="col-md-7 col-sm-12 text-justify fs-5 ls-5">
-                <p>Full-stack development refers to the process of building both the front-end (client-side) and back-end (server-side) of a web application. A full-stack developer possesses the skills and knowledge to handle all aspects of development, from the user interface to the underlying infrastructure. This includes tasks like designing the user interface, writing code for the server, managing databases, and ensuring the application functions smoothly from end-to-end. </p>
+            <div class="col-md-7 col-sm-12 text-justify fs-4 ls-5">
+                <p>Full-stack development refers to the process of building both the front-end (client-side) and
+                    back-end (server-side) of a web application. A full-stack developer possesses the skills and
+                    knowledge to handle all aspects of development, from the user interface to the underlying
+                    infrastructure. This includes tasks like designing the user interface, writing code for the server,
+                    managing databases, and ensuring the application functions smoothly from end-to-end. </p>
             </div>
-           
+
 
 
 
         </div>
-        
+
+        <div class="w-md-700 h-auto m-5 shadow-lg p-5 rounded ">
+            <div class="row">
+                <h1 class="text-center mb-5">FrontEnd Technologies</h1>
+                <ng-container *ngFor="let t of  technologies">
+                    <div class="col-md-3" *ngIf="t.category=='frontend'">
+                        <div class="card">
+                            <div class="card-header">
+                                <img [src]="t.img" class="card-img-top img-thumbnail imgt">
+                            </div>
+                            <div class="card-body">
+                                <h1>{{t.title}}</h1>
+                                <p>{{t.description}}</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </ng-container>
+            </div>
+
+        </div>
+
+        <div class="w-md-700 h-auto m-5 shadow-lg p-5 rounded ">
+            <div class="row">
+                <h1 class="text-center mb-5">BackEnd Technologies</h1>
+                <ng-container *ngFor="let t of  technologies">
+                    <div class="col-md-3" *ngIf="t.category=='backend'">
+                        <div class="card">
+                            <div class="card-header">
+                                <img [src]="t.img" class="card-img-top img-thumbnail imgt">
+                            </div>
+                            <div class="card-body">
+                                <h1>{{t.title}}</h1>
+                                <p>{{t.description}}</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </ng-container>
+            </div>
+
+        </div>
+        <div class="w-md-800 h-auto m-5 shadow-lg p-5 rounded ">
+            <div class="row">
+                <h1 class="text-center mb-5">Database & Tools</h1>
+                <ng-container *ngFor="let t of  technologies">
+                    <div class="col-md-3" *ngIf="t.category=='database' || t.category=='tools'">
+                        <div class="card">
+                            <div class="card-header">
+                                <img [src]="t.img" class="card-img-top img-thumbnail">
+                            </div>
+                            <div class="card-body">
+                                <h1>{{t.title}}</h1>
+                                <p>{{t.description}}</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </ng-container>
+            </div>
+
+        </div>
+
+
+
     </div>
     <div class="w-md-700 h-auto m-5 shadow-lg p-5 rounded ">
         <div class="row">
-            <h1>Data Science</h1>
-           <div class="col-md-8 col-sm-12">
+            <h1>{{title2}}</h1>
+            <div class="col-md-5 col-sm-12">
                 <img src="https://www.naukri.com/campus/career-guidance/wp-content/uploads/2023/11/what-is-data-science.jpg"
-                    class="img-fluid" width="500" height="500">
+                    class="img-fluid w-100 h-100">
+            </div>
+            <div class="col-md-7 col-sm-12 text-justify fs-5 ls-5">
+                <p>Data science is an interdisciplinary field focused on extracting knowledge and insights from data
+                    using scientific methods, algorithms, and systems. It involves collecting, processing, analyzing,
+                    and interpreting data to solve problems, make predictions, and drive decision-making in various
+                    domains. Essentially, data science is about turning raw data into actionable information.
+                    Key aspects of data science include:
+                    Data Collection and Preparation:
+                    Gathering data from various sources and cleaning it for analysis.
+                    Data Analysis:
+                    Applying statistical methods, machine learning algorithms, and other techniques to uncover patterns
+                    and trends.
+                    Knowledge Extraction:
+                    Deriving meaningful insights and actionable knowledge from the analyzed data.
+                    Decision Making:
+                    Using the extracted knowledge to inform decisions and strategies in various fields. </p>
 
             </div>
+        </div>
+        <div class="w-md-700 h-auto m-5 shadow-lg p-5 rounded ">
+            <div class="row">
+                <h1 class="text-center mb-5">Libraries</h1>
+                <ng-container *ngFor="let t1 of  technologiesds">
+                    <div class="col-md-3" *ngIf="t1.category=='library'">
+                        <div class="card">
+                            <div class="card-header">
+                                <img [src]="t1.img" class="card-img-top img-thumbnail">
+                            </div>
+                            <div class="card-body">
+                                <h1>{{t1.title}}</h1>
+                                <p>{{t1.description}}</p>
+                            </div>
 
+                        </div>
 
+                    </div>
+
+                </ng-container>
+            </div>
 
         </div>
+        <div class="w-md-700 h-auto m-5 shadow-lg p-5 rounded ">
+            <div class="row">
+                <h1 class="text-center mb-5">ML-Models</h1>
+                <ng-container *ngFor="let t of  technologiesds">
+                    <div class="col-md-3" *ngIf="t.category=='ml-model'">
+                        <div class="card">
+                            <div class="card-header">
+                                <img [src]="t.img" class="card-img-top img-thumbnail">
+                            </div>
+                            <div class="card-body">
+                                <h1>{{t.title}}</h1>
+                                <p>{{t.description}}</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </ng-container>
+            </div>
+
+        </div>
+
+
     </div>
 </div>

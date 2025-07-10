@@ -9,6 +9,11 @@ import { AboutComponent } from './about/about.component';
 import { CoursesComponent } from './courses/courses.component';
 import { ContactComponent } from './contact/contact.component';
 
+import { GalleryComponent } from './gallery/gallery.component';
+import { LoginPageComponent } from './login-page/login-page.component';
+import { FormsModule } from '@angular/forms';
+import { UserdetailsComponent } from './userdetails/userdetails.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,11 +21,15 @@ import { ContactComponent } from './contact/contact.component';
     HomeComponent,
     AboutComponent,
     CoursesComponent,
-    ContactComponent
+    ContactComponent,
+    GalleryComponent,
+    LoginPageComponent,
+    UserdetailsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

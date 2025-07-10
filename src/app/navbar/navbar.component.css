@@ -1,0 +1,7 @@
+.navmain{
+    background-color: transparent;
+}
+
+.navmain::after{
+    background-color: white;
+}
